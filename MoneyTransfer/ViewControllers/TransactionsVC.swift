@@ -1,19 +1,19 @@
 //
-//  ViewController.swift
+//  TransactionsVC.swift
 //  MoneyTransfer
 //
-//  Created by Mukhammadjon Askarov on 11/01/21.
+//  Created by Mukhammadjon Askarov on 12/01/21.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class TransactionsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        view.backgroundColor = .gray
         // Do any additional setup after loading the view.
     }
-
-
+    
 }
-
