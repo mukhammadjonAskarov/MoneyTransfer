@@ -43,7 +43,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func createTransactionsNavigationController() -> UINavigationController {
         let transactionsVC = TransactionsVC()
-        transactionsVC.title = "Cards"
+        transactionsVC.title = "Transactions"
         transactionsVC.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 2)
         
         return UINavigationController(rootViewController: transactionsVC)
@@ -62,7 +62,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let tabBar = UITabBarController()
         UITabBar.appearance().tintColor = .systemGreen
         
-        tabBar.viewControllers = [createTransferNavigationController(), createMenuNavigationController(), createTransactionsNavigationController(), createMenuNavigationController()]
+        tabBar.viewControllers = [createTransferNavigationController(), createCardsNavigationController(), createTransactionsNavigationController(), createMenuNavigationController()]
         return tabBar
     }
     

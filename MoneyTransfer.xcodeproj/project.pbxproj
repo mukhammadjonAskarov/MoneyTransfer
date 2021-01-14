@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A21930E625B006B1005AEAE4 /* MTAddCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21930E525B006B1005AEAE4 /* MTAddCardButton.swift */; };
+		A21930EA25B012F7005AEAE4 /* MTAddCardButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21930E925B012F7005AEAE4 /* MTAddCardButtonCell.swift */; };
 		A229363025AC718B00EEB34A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229362F25AC718B00EEB34A /* AppDelegate.swift */; };
 		A229363225AC718B00EEB34A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229363125AC718B00EEB34A /* SceneDelegate.swift */; };
 		A229363425AC718B00EEB34A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229363325AC718B00EEB34A /* ViewController.swift */; };
@@ -23,9 +25,25 @@
 		A27D60D325ADA9B700EA1B00 /* MTBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D60D025ADA9B700EA1B00 /* MTBodyLabel.swift */; };
 		A27D60D425ADA9B700EA1B00 /* MTSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D60D125ADA9B700EA1B00 /* MTSecondaryTitleLabel.swift */; };
 		A27D60D525ADA9B700EA1B00 /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D60D225ADA9B700EA1B00 /* GFTitleLabel.swift */; };
+		A28166DA25AEC1C40037B1D5 /* MoneyTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28166D925AEC1C40037B1D5 /* MoneyTransferTests.swift */; };
+		A28166FC25AEDB530037B1D5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28166FB25AEDB530037B1D5 /* CardView.swift */; };
+		A281670525AEED920037B1D5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281670425AEED920037B1D5 /* Card.swift */; };
+		A281670E25AEEF4C0037B1D5 /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281670D25AEEF4C0037B1D5 /* CardViewCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A28166DC25AEC1C40037B1D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A229362425AC718B00EEB34A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A229362B25AC718B00EEB34A;
+			remoteInfo = MoneyTransfer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A21930E525B006B1005AEAE4 /* MTAddCardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTAddCardButton.swift; sourceTree = "<group>"; };
+		A21930E925B012F7005AEAE4 /* MTAddCardButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTAddCardButtonCell.swift; sourceTree = "<group>"; };
 		A229362C25AC718B00EEB34A /* MoneyTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A229362F25AC718B00EEB34A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A229363125AC718B00EEB34A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,10 +62,23 @@
 		A27D60D025ADA9B700EA1B00 /* MTBodyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTBodyLabel.swift; sourceTree = "<group>"; };
 		A27D60D125ADA9B700EA1B00 /* MTSecondaryTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		A27D60D225ADA9B700EA1B00 /* GFTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
+		A28166D725AEC1C40037B1D5 /* MoneyTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyTransferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28166D925AEC1C40037B1D5 /* MoneyTransferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTransferTests.swift; sourceTree = "<group>"; };
+		A28166DB25AEC1C40037B1D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A28166FB25AEDB530037B1D5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A281670425AEED920037B1D5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A281670D25AEEF4C0037B1D5 /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A229362925AC718B00EEB34A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28166D425AEC1C40037B1D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				A229362E25AC718B00EEB34A /* MoneyTransfer */,
+				A28166D825AEC1C40037B1D5 /* MoneyTransferTests */,
 				A229362D25AC718B00EEB34A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				A229362C25AC718B00EEB34A /* MoneyTransfer.app */,
+				A28166D725AEC1C40037B1D5 /* MoneyTransferTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +109,7 @@
 		A229362E25AC718B00EEB34A /* MoneyTransfer */ = {
 			isa = PBXGroup;
 			children = (
+				A281670325AEED830037B1D5 /* Models */,
 				A229369C25AD601800EEB34A /* Support */,
 				A229369B25AD5FF200EEB34A /* CustomViews */,
 				A229369625AD5FD300EEB34A /* Extensions */,
@@ -123,6 +157,8 @@
 		A229369B25AD5FF200EEB34A /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				A281670A25AEEF360037B1D5 /* Cells */,
+				A28166FA25AEDB460037B1D5 /* CardViews */,
 				A27D60CF25ADA9A100EA1B00 /* Labels */,
 				A27D60C725ADA2E700EA1B00 /* Views */,
 				A27D60B825AD76E500EA1B00 /* Buttons */,
@@ -155,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				A27D60B925AD770500EA1B00 /* MTButton.swift */,
+				A21930E525B006B1005AEAE4 /* MTAddCardButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -177,6 +214,40 @@
 			path = Labels;
 			sourceTree = "<group>";
 		};
+		A28166D825AEC1C40037B1D5 /* MoneyTransferTests */ = {
+			isa = PBXGroup;
+			children = (
+				A28166D925AEC1C40037B1D5 /* MoneyTransferTests.swift */,
+				A28166DB25AEC1C40037B1D5 /* Info.plist */,
+			);
+			path = MoneyTransferTests;
+			sourceTree = "<group>";
+		};
+		A28166FA25AEDB460037B1D5 /* CardViews */ = {
+			isa = PBXGroup;
+			children = (
+				A28166FB25AEDB530037B1D5 /* CardView.swift */,
+			);
+			path = CardViews;
+			sourceTree = "<group>";
+		};
+		A281670325AEED830037B1D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A281670425AEED920037B1D5 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A281670A25AEEF360037B1D5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A281670D25AEEF4C0037B1D5 /* CardViewCell.swift */,
+				A21930E925B012F7005AEAE4 /* MTAddCardButtonCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,6 +268,24 @@
 			productReference = A229362C25AC718B00EEB34A /* MoneyTransfer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A28166D625AEC1C40037B1D5 /* MoneyTransferTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28166E025AEC1C40037B1D5 /* Build configuration list for PBXNativeTarget "MoneyTransferTests" */;
+			buildPhases = (
+				A28166D325AEC1C40037B1D5 /* Sources */,
+				A28166D425AEC1C40037B1D5 /* Frameworks */,
+				A28166D525AEC1C40037B1D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A28166DD25AEC1C40037B1D5 /* PBXTargetDependency */,
+			);
+			name = MoneyTransferTests;
+			productName = MoneyTransferTests;
+			productReference = A28166D725AEC1C40037B1D5 /* MoneyTransferTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +297,10 @@
 				TargetAttributes = {
 					A229362B25AC718B00EEB34A = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					A28166D625AEC1C40037B1D5 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = A229362B25AC718B00EEB34A;
 					};
 				};
 			};
@@ -225,6 +318,7 @@
 			projectRoot = "";
 			targets = (
 				A229362B25AC718B00EEB34A /* MoneyTransfer */,
+				A28166D625AEC1C40037B1D5 /* MoneyTransferTests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,6 +333,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A28166D525AEC1C40037B1D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -248,8 +349,11 @@
 			files = (
 				A27D60D525ADA9B700EA1B00 /* GFTitleLabel.swift in Sources */,
 				A27D60B425AD76BB00EA1B00 /* MTImageView.swift in Sources */,
+				A21930E625B006B1005AEAE4 /* MTAddCardButton.swift in Sources */,
+				A21930EA25B012F7005AEAE4 /* MTAddCardButtonCell.swift in Sources */,
 				A229363425AC718B00EEB34A /* ViewController.swift in Sources */,
 				A27D60BA25AD770500EA1B00 /* MTButton.swift in Sources */,
+				A28166FC25AEDB530037B1D5 /* CardView.swift in Sources */,
 				A27D60C925ADA2F200EA1B00 /* MTView.swift in Sources */,
 				A22936A725AD60B200EEB34A /* TransferVC.swift in Sources */,
 				A229363025AC718B00EEB34A /* AppDelegate.swift in Sources */,
@@ -260,10 +364,28 @@
 				A22936AD25AD60F200EEB34A /* TransactionsVC.swift in Sources */,
 				A229363225AC718B00EEB34A /* SceneDelegate.swift in Sources */,
 				A22936AA25AD60D300EEB34A /* CardsVC.swift in Sources */,
+				A281670E25AEEF4C0037B1D5 /* CardViewCell.swift in Sources */,
+				A281670525AEED920037B1D5 /* Card.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28166D325AEC1C40037B1D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28166DA25AEC1C40037B1D5 /* MoneyTransferTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A28166DD25AEC1C40037B1D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A229362B25AC718B00EEB34A /* MoneyTransfer */;
+			targetProxy = A28166DC25AEC1C40037B1D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A229363A25AC718D00EEB34A /* LaunchScreen.storyboard */ = {
@@ -439,6 +561,46 @@
 			};
 			name = Release;
 		};
+		A28166DE25AEC1C40037B1D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42U8HC3WSH;
+				INFOPLIST_FILE = MoneyTransferTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Mukhammadjonaskarov.MoneyTransferTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyTransfer.app/MoneyTransfer";
+			};
+			name = Debug;
+		};
+		A28166DF25AEC1C40037B1D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42U8HC3WSH;
+				INFOPLIST_FILE = MoneyTransferTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Mukhammadjonaskarov.MoneyTransferTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyTransfer.app/MoneyTransfer";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -456,6 +618,15 @@
 			buildConfigurations = (
 				A229364125AC718D00EEB34A /* Debug */,
 				A229364225AC718D00EEB34A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A28166E025AEC1C40037B1D5 /* Build configuration list for PBXNativeTarget "MoneyTransferTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28166DE25AEC1C40037B1D5 /* Debug */,
+				A28166DF25AEC1C40037B1D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

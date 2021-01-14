@@ -33,5 +33,4 @@ class MTTitleLabel: UILabel {
         lineBreakMode               = .byTruncatingTail
         translatesAutoresizingMaskIntoConstraints = false
     }
-    
 }

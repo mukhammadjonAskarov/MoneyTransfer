@@ -22,7 +22,6 @@ class MTImageView: UIView {
     
     private func configure(){
         
-        
     }
 }
 

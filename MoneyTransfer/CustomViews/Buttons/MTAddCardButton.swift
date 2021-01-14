@@ -1,13 +1,14 @@
 //
-//  MTButton.swift
+//  MTAddCardButton.swift
 //  MoneyTransfer
 //
-//  Created by Mukhammadjon Askarov on 12/01/21.
+//  Created by Mukhammadjon Askarov on 14/01/21.
 //
 
+import Foundation
 import UIKit
 
-class MTButton: UIButton {
+class MTAddCardButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,10 +33,10 @@ class MTButton: UIButton {
         imageEdgeInsets = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 0 )
       
         layer.cornerRadius = 0
-        titleLabel?.textColor = .white
+        titleLabel?.textColor = .blue
         titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
         translatesAutoresizingMaskIntoConstraints = false
-        setImage(UIImage(systemName: "chevron.right.circle"), for: .normal)
+       
     }
     
     func set(backgroundColor: UIColor, title: String){
@@ -43,5 +44,6 @@ class MTButton: UIButton {
         self.backgroundColor  =  backgroundColor
         setTitle(title, for: .normal)
     }
+    
     
 }
