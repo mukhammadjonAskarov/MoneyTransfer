@@ -28,6 +28,7 @@ class MTSecondaryTitleLabel: UILabel {
      private func configure(){
          textColor                   = .secondaryLabel
          adjustsFontSizeToFitWidth   = true
+         textAlignment               = .center
          minimumScaleFactor          = 0.90
          lineBreakMode               = .byTruncatingTail
          translatesAutoresizingMaskIntoConstraints = false

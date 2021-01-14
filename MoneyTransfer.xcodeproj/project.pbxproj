@@ -28,6 +28,7 @@
 		A28166FC25AEDB530037B1D5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28166FB25AEDB530037B1D5 /* CardView.swift */; };
 		A281670525AEED920037B1D5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281670425AEED920037B1D5 /* Card.swift */; };
 		A281670E25AEEF4C0037B1D5 /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A281670D25AEEF4C0037B1D5 /* CardViewCell.swift */; };
+		A2E10C9525B0640100DE7634 /* BaseCardTableVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E10C9425B0640100DE7634 /* BaseCardTableVIewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		A28166FB25AEDB530037B1D5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		A281670425AEED920037B1D5 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A281670D25AEEF4C0037B1D5 /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
+		A2E10C9425B0640100DE7634 /* BaseCardTableVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCardTableVIewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 			children = (
 				A281670D25AEEF4C0037B1D5 /* CardViewCell.swift */,
 				A21930E925B012F7005AEAE4 /* MTAddCardButtonCell.swift */,
+				A2E10C9425B0640100DE7634 /* BaseCardTableVIewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			files = (
 				A27D60D525ADA9B700EA1B00 /* GFTitleLabel.swift in Sources */,
 				A27D60B425AD76BB00EA1B00 /* MTImageView.swift in Sources */,
+				A2E10C9525B0640100DE7634 /* BaseCardTableVIewCell.swift in Sources */,
 				A21930E625B006B1005AEAE4 /* MTAddCardButton.swift in Sources */,
 				A21930EA25B012F7005AEAE4 /* MTAddCardButtonCell.swift in Sources */,
 				A229363425AC718B00EEB34A /* ViewController.swift in Sources */,

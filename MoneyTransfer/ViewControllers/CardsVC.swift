@@ -18,7 +18,7 @@ class CardsVC: UIViewController {
     
     var tempCards: [Card] = []
     let tableView = UITableView()
-  
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -30,22 +30,24 @@ class CardsVC: UIViewController {
         tempCards.append(card3)
         tempCards.append(card4)
         configureTableView()
-    }
-    
-    func configureTableView(){
-        view.addSubview(tableView)
-       
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-      
-        tableView.register(CardViewCell.self, forCellReuseIdentifier: CardViewCell.reuseId)
-        tableView.register(MTAddCardButtonCell.self, forCellReuseIdentifier: MTAddCardButtonCell.reuserId)
-        
-        self.tableView.translatesAutoresizingMaskIntoConstraints = false
         
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
+    }
+    
+    func configureTableView(){
+        view.addSubview(tableView)
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.separatorStyle = .none
+        tableView.backgroundColor = .clear
+        
+        tableView.register(CardViewCell.self, forCellReuseIdentifier: CardViewCell.reuseId)
+        tableView.register(MTAddCardButtonCell.self, forCellReuseIdentifier: MTAddCardButtonCell.reuserId)
+        
+        self.tableView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -53,18 +55,8 @@ class CardsVC: UIViewController {
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
             
-           // tableView.heightAnchor.constraint(equalToConstant: tableView.contentSize.height)
-            
+            //tableView.heightAnchor.constraint(equalToConstant: tableView.contentSize.height)
         ])
-    }
-    
-    func setCellAsCardView(cell: UITableViewCell){
-        cell.contentView.layer.cornerRadius = 2
-        cell.contentView.layer.borderColor  = UIColor.black.cgColor
-        cell.contentView.layer.shadowColor  = UIColor.white.cgColor
-        cell.contentView.layer.shadowOffset = CGSize(width: 1, height: 2)
-        cell.contentView.layer.shadowOpacity = 0.9
-        cell.contentView.layer.shadowPath    = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
     }
     
 }
@@ -73,15 +65,17 @@ extension CardsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tempCards.count + 1
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == tempCards.count {
+            return 80
+        }
         return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         if indexPath.row == tempCards.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: MTAddCardButtonCell.reuserId, for: indexPath) as! MTAddCardButtonCell
-            setCellAsCardView(cell: cell)
             
             return cell
         }
@@ -89,7 +83,6 @@ extension CardsVC: UITableViewDelegate, UITableViewDataSource {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: CardViewCell.reuseId, for: indexPath) as! CardViewCell
             cell.model = tempCards[indexPath.row]
-            setCellAsCardView(cell: cell)
             
             return cell
         }

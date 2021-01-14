@@ -25,7 +25,6 @@ class TransferVC: UIViewController {
         view.backgroundColor = .white
         navigationController?.setNavigationBarHidden(true, animated: true)
         configureUI()
-        
     }
     
     func configureUI(){
@@ -48,12 +47,12 @@ class TransferVC: UIViewController {
         visaCardImageView.alpha     = 0.90
         visaCardImageView.contentMode   = .scaleAspectFit
         
-        humoCardImageView.image     = UIImage(named: "Visa")
+        humoCardImageView.image     = UIImage(named: "humo")
         humoCardImageView.translatesAutoresizingMaskIntoConstraints = false
         humoCardImageView.alpha     = 0.90
         humoCardImageView.contentMode   = .scaleAspectFit
         
-        uzcardImageView.image       = UIImage(named: "Visa")
+        uzcardImageView.image       = UIImage(named: "uzcard")
         uzcardImageView.translatesAutoresizingMaskIntoConstraints   = false
         uzcardImageView.alpha       = 0.90
         uzcardImageView.contentMode = .scaleAspectFit

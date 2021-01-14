@@ -9,8 +9,8 @@
 import UIKit
 
 class MTBodyLabel: UILabel {
-
-   override init(frame: CGRect) {
+    
+    override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
     }
@@ -18,8 +18,8 @@ class MTBodyLabel: UILabel {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-   
-     init(textAlignment: NSTextAlignment) {
+    
+    init(textAlignment: NSTextAlignment) {
         super.init(frame: .zero)
         self.textAlignment   = textAlignment
         configure()

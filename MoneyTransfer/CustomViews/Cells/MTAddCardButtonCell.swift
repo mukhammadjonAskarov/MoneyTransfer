@@ -8,37 +8,31 @@
 import Foundation
 import UIKit
 
-class MTAddCardButtonCell: UITableViewCell {
+class MTAddCardButtonCell: BaseCardTableViewCell {
     
     let addCardButton = MTAddCardButton(backgroundColor: .white, title: "Add New Card")
     static let reuserId = "addCardCell"
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+    override func configure(){
         self.addCardButton.setImage(UIImage(systemName: "plus"), for: .normal)
         self.addCardButton.setTitle("Add New Card", for: .normal)
-        configure()
-        contentView.backgroundColor = .white
+        addCardButton.backgroundColor = .blue
         
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configure(){
-        
-        contentView.addSubview(addCardButton)
-       // contentView.backgroundColor = .white
+        contentView.addSubview(cardView)
+        cardView.addSubview(addCardButton)
+        cardView.translatesAutoresizingMaskIntoConstraints = false
         addCardButton.translatesAutoresizingMaskIntoConstraints = false
-        contentView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             
-            addCardButton.topAnchor.constraint(equalTo: contentView.topAnchor),
-            addCardButton.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            addCardButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            addCardButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+            cardView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            cardView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            cardView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            cardView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            
+            addCardButton.topAnchor.constraint(equalTo: cardView.topAnchor),
+            addCardButton.leadingAnchor.constraint(equalTo: cardView.leadingAnchor),
+            addCardButton.trailingAnchor.constraint(equalTo: cardView.trailingAnchor),
+            addCardButton.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
 }

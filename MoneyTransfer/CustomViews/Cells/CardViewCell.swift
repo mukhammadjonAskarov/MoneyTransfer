@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-class CardViewCell: UITableViewCell {
+class CardViewCell: BaseCardTableViewCell {
     static let reuseId = "card"
-   
+    
     lazy var cardHolderNameLabel = MTTitleLabel(textAlignment: .right, fontSize: 12)
     lazy var cardExpiryDateLabel = MTSecondaryTitleLabel(fontSize: 12)
     lazy var cardNumberLabel     = MTSecondaryTitleLabel(fontSize: 12)
@@ -22,39 +22,34 @@ class CardViewCell: UITableViewCell {
             self.cardExpiryDateLabel.text = model.expiryDate
         }
     }
-   
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        configure()
+    
+    override func configure(){
         
-       // accessoryType = .disclosureIndicator
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configure(){
-        contentView.addSubview(cardNumberLabel)
-        contentView.addSubview(cardHolderNameLabel)
-        contentView.addSubview(cardExpiryDateLabel)
-        contentView.translatesAutoresizingMaskIntoConstraints = false
-        //contentView.backgroundColor = .white
+        contentView.addSubview(cardView)
+        cardView.addSubview(cardNumberLabel)
+        cardView.addSubview(cardHolderNameLabel)
+        cardView.addSubview(cardExpiryDateLabel)
+        cardView.translatesAutoresizingMaskIntoConstraints = false
         
         cardNumberLabel.translatesAutoresizingMaskIntoConstraints = false
         cardHolderNameLabel.translatesAutoresizingMaskIntoConstraints = false
         cardExpiryDateLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            cardNumberLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
-            cardNumberLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-           
+            cardView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            cardView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            cardView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            cardView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            
+            cardNumberLabel.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 10),
+            cardNumberLabel.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 10),
+            
             cardHolderNameLabel.topAnchor.constraint(equalTo: cardNumberLabel.bottomAnchor, constant: 10),
             cardHolderNameLabel.leadingAnchor.constraint(equalTo: cardNumberLabel.leadingAnchor),
-           
+            
             cardExpiryDateLabel.topAnchor.constraint(equalTo: cardHolderNameLabel.bottomAnchor, constant: 10),
             cardExpiryDateLabel.leadingAnchor.constraint(equalTo: cardHolderNameLabel.leadingAnchor),
-            cardExpiryDateLabel.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -10),
+            cardExpiryDateLabel.bottomAnchor.constraint(equalTo: cardView.bottomAnchor, constant: -20),
             
         ])
     }
