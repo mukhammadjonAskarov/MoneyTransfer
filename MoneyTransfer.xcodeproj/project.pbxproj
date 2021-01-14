@@ -20,7 +20,6 @@
 		A22936B025AD610B00EEB34A /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22936AF25AD610B00EEB34A /* MenuVC.swift */; };
 		A27D60B425AD76BB00EA1B00 /* MTImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D60B325AD76BB00EA1B00 /* MTImageView.swift */; };
 		A27D60BA25AD770500EA1B00 /* MTButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D60B925AD770500EA1B00 /* MTButton.swift */; };
-		A27D60C425AD9CED00EA1B00 /* MTColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D60C325AD9CED00EA1B00 /* MTColors.swift */; };
 		A27D60C925ADA2F200EA1B00 /* MTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D60C825ADA2F200EA1B00 /* MTView.swift */; };
 		A27D60D325ADA9B700EA1B00 /* MTBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D60D025ADA9B700EA1B00 /* MTBodyLabel.swift */; };
 		A27D60D425ADA9B700EA1B00 /* MTSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27D60D125ADA9B700EA1B00 /* MTSecondaryTitleLabel.swift */; };
@@ -57,7 +56,6 @@
 		A22936AF25AD610B00EEB34A /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		A27D60B325AD76BB00EA1B00 /* MTImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTImageView.swift; sourceTree = "<group>"; };
 		A27D60B925AD770500EA1B00 /* MTButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTButton.swift; sourceTree = "<group>"; };
-		A27D60C325AD9CED00EA1B00 /* MTColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MTColors.swift; path = ../../../../Downloads/MTColors.swift; sourceTree = "<group>"; };
 		A27D60C825ADA2F200EA1B00 /* MTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTView.swift; sourceTree = "<group>"; };
 		A27D60D025ADA9B700EA1B00 /* MTBodyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTBodyLabel.swift; sourceTree = "<group>"; };
 		A27D60D125ADA9B700EA1B00 /* MTSecondaryTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTSecondaryTitleLabel.swift; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 		A229369325AD5FAC00EEB34A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				A27D60C325AD9CED00EA1B00 /* MTColors.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -357,7 +354,6 @@
 				A27D60C925ADA2F200EA1B00 /* MTView.swift in Sources */,
 				A22936A725AD60B200EEB34A /* TransferVC.swift in Sources */,
 				A229363025AC718B00EEB34A /* AppDelegate.swift in Sources */,
-				A27D60C425AD9CED00EA1B00 /* MTColors.swift in Sources */,
 				A27D60D325ADA9B700EA1B00 /* MTBodyLabel.swift in Sources */,
 				A22936B025AD610B00EEB34A /* MenuVC.swift in Sources */,
 				A27D60D425ADA9B700EA1B00 /* MTSecondaryTitleLabel.swift in Sources */,

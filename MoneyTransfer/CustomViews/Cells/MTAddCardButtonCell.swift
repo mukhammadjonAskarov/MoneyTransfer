@@ -19,9 +19,7 @@ class MTAddCardButtonCell: UITableViewCell {
         self.addCardButton.setImage(UIImage(systemName: "plus"), for: .normal)
         self.addCardButton.setTitle("Add New Card", for: .normal)
         configure()
-        
-       // accessoryType = .disclosureIndicator
-    }
+            }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
