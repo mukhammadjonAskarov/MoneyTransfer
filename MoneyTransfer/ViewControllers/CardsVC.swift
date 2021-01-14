@@ -61,18 +61,17 @@ class CardsVC: UIViewController {
     func setCellAsCardView(cell: UITableViewCell){
         cell.contentView.layer.cornerRadius = 2
         cell.contentView.layer.borderColor  = UIColor.black.cgColor
-        cell.contentView.layer.shadowColor  = UIColor.darkGray.cgColor
+        cell.contentView.layer.shadowColor  = UIColor.white.cgColor
         cell.contentView.layer.shadowOffset = CGSize(width: 1, height: 2)
         cell.contentView.layer.shadowOpacity = 0.9
         cell.contentView.layer.shadowPath    = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
-        cell.contentView.backgroundColor = .white
     }
     
 }
 
 extension CardsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tempCards.count
+        return tempCards.count + 1
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
@@ -80,7 +79,7 @@ extension CardsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row == tempCards.count - 1 {
+        if indexPath.row == tempCards.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: MTAddCardButtonCell.reuserId, for: indexPath) as! MTAddCardButtonCell
             setCellAsCardView(cell: cell)
             

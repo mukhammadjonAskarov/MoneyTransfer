@@ -10,8 +10,7 @@ import UIKit
 
 class CardViewCell: UITableViewCell {
     static let reuseId = "card"
-   // var cardView    = CardView()
-    
+   
     lazy var cardHolderNameLabel = MTTitleLabel(textAlignment: .right, fontSize: 12)
     lazy var cardExpiryDateLabel = MTSecondaryTitleLabel(fontSize: 12)
     lazy var cardNumberLabel     = MTSecondaryTitleLabel(fontSize: 12)
@@ -40,6 +39,7 @@ class CardViewCell: UITableViewCell {
         contentView.addSubview(cardHolderNameLabel)
         contentView.addSubview(cardExpiryDateLabel)
         contentView.translatesAutoresizingMaskIntoConstraints = false
+        //contentView.backgroundColor = .white
         
         cardNumberLabel.translatesAutoresizingMaskIntoConstraints = false
         cardHolderNameLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -48,18 +48,13 @@ class CardViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             cardNumberLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
             cardNumberLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            cardNumberLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
-            cardNumberLabel.heightAnchor.constraint(equalToConstant: 40),
-            
+           
             cardHolderNameLabel.topAnchor.constraint(equalTo: cardNumberLabel.bottomAnchor, constant: 10),
             cardHolderNameLabel.leadingAnchor.constraint(equalTo: cardNumberLabel.leadingAnchor),
-            cardHolderNameLabel.trailingAnchor.constraint(equalTo: cardNumberLabel.trailingAnchor),
-            cardHolderNameLabel.heightAnchor.constraint(equalToConstant: 30),
-            
+           
             cardExpiryDateLabel.topAnchor.constraint(equalTo: cardHolderNameLabel.bottomAnchor, constant: 10),
             cardExpiryDateLabel.leadingAnchor.constraint(equalTo: cardHolderNameLabel.leadingAnchor),
-            cardExpiryDateLabel.trailingAnchor.constraint(equalTo: cardHolderNameLabel.trailingAnchor),
-            cardExpiryDateLabel.heightAnchor.constraint(equalToConstant: 30),
+            cardExpiryDateLabel.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -10),
             
         ])
     }

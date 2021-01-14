@@ -19,7 +19,9 @@ class MTAddCardButtonCell: UITableViewCell {
         self.addCardButton.setImage(UIImage(systemName: "plus"), for: .normal)
         self.addCardButton.setTitle("Add New Card", for: .normal)
         configure()
-            }
+        contentView.backgroundColor = .white
+        
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -28,6 +30,7 @@ class MTAddCardButtonCell: UITableViewCell {
     func configure(){
         
         contentView.addSubview(addCardButton)
+       // contentView.backgroundColor = .white
         addCardButton.translatesAutoresizingMaskIntoConstraints = false
         contentView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
