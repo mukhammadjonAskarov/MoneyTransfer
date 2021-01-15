@@ -9,37 +9,37 @@ import UIKit
 
 class CardView: UIView {
     
-    @IBInspectable var cornerRadius: CGFloat = 20 {
+    @IBInspectable var cornerRadius: CGFloat = 15 {
         didSet {
             setNeedsLayout()
         }
     }
     
-    @IBInspectable var shadowOffsetWidth: CGFloat = 0.0 {
+    @IBInspectable var shadowOffsetWidth: CGFloat = 1.0 {
         didSet {
             setNeedsLayout()
         }
     }
     
-    @IBInspectable var shadowOffsetHeight: CGFloat = 1.0 {
+    @IBInspectable var shadowOffsetHeight: CGFloat = 2.0 {
         didSet {
             setNeedsLayout()
         }
     }
     
-    @IBInspectable var shadowColor: UIColor? = UIColor.black {
+    @IBInspectable var shadowColor: UIColor? = UIColor.darkGray {
         didSet {
             setNeedsLayout()
         }
     }
     
-    @IBInspectable var shadowOpacity: Float = 0.5 {
+    @IBInspectable var shadowOpacity: Float = 0.9 {
         didSet {
             setNeedsLayout()
         }
     }
     
-    @IBInspectable var shadowBlur: CGFloat = 0 {
+    @IBInspectable var shadowBlur: CGFloat = 4 {
         didSet {
             setNeedsLayout()
         }

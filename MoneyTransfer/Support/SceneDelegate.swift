@@ -12,7 +12,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds )
@@ -52,7 +51,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func createMenuNavigationController() -> UINavigationController {
         let menuVC = MenuVC()
         menuVC.title = "Menu"
-        menuVC.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 3)
+        //menuVC.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 3)
+        menuVC.tabBarItem = UITabBarItem(title: "Menu", image: UIImage(systemName: "line.horizontal.3"), tag: 3)
         
         return UINavigationController(rootViewController: menuVC)
     }

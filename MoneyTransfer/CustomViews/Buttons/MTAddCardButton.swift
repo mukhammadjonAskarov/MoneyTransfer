@@ -23,7 +23,6 @@ class MTAddCardButton: UIButton {
         super.init(frame: .zero)
         self.backgroundColor = backgroundColor
         self.setTitle(title, for: .normal)
-        
         configure()
     }
     
@@ -36,7 +35,6 @@ class MTAddCardButton: UIButton {
         titleLabel?.textColor = .blue
         titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
         translatesAutoresizingMaskIntoConstraints = false
-       
     }
     
     func set(backgroundColor: UIColor, title: String){
@@ -44,6 +42,4 @@ class MTAddCardButton: UIButton {
         self.backgroundColor  =  backgroundColor
         setTitle(title, for: .normal)
     }
-    
-    
 }

@@ -42,7 +42,7 @@ class TransferVC: UIViewController {
         pushLogoTitlelabel.text = "Перевод с карты на карту"
         pushLogoTitlelabel.textColor = .white
         
-        visaCardImageView.image     = UIImage(named: "Visa")
+        visaCardImageView.image     = UIImage(named: "visa")
         visaCardImageView.translatesAutoresizingMaskIntoConstraints = false
         visaCardImageView.alpha     = 0.90
         visaCardImageView.contentMode   = .scaleAspectFit

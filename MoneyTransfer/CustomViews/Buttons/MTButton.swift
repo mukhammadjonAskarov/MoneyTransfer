@@ -31,7 +31,7 @@ class MTButton: UIButton {
         titleEdgeInsets = UIEdgeInsets(top: 1, left: (imageView?.frame.width)!, bottom: 1, right: 0)
         imageEdgeInsets = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 0 )
       
-        layer.cornerRadius = 0
+        layer.cornerRadius = 4
         titleLabel?.textColor = .white
         titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
         translatesAutoresizingMaskIntoConstraints = false
